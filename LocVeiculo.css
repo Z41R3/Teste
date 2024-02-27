@@ -50,7 +50,7 @@ body {
     width: 60%;
     background-color: rgba(156, 131, 92, 0.411);
     border-radius: 10%;
-    box-shadow: 5% 5% 5% #000000;
+    box-shadow:#000000;
     margin: 2% auto;
     padding-top: 2%;
     padding-left: 2%;
