@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação de veiculos</title>
+    <link rel="stylesheet" href="LocVeiculo.css">
+</head>
+
+<body>
+   <div class="banner">
+    <video autoplay muted loop>
+        <source src="./coverr-driving-over-the-lake-5906-1080p.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1>Locadora de Veículos</h1>
+        
+
+        <form action="dados.php" method="post" class="move">
+            <fieldset>
+                <legend>Cadastro de Cliente</legend>
+                <label class="linha" for="nome-usuario"> Nome </label>
+                <input type="text" name="nome-user" placeholder="Digite seu nome aqui..." autofocus id="nome-user"> <br> 
+        
+                <label class="linha"> RG </label>
+                <input type="number" name="identidade"> <br>
+        
+                <label class="linha"> CPF </label>
+                <input type="number" name="cpf"> <br>
+        
+                <label class="linha"> Endereço </label>
+                <input type="text" name="endereco"> <br>
+        
+                <label class="linha"> Data de nascimento</label>
+                <input type="date" name="nascimento"><br>
+        
+                <label class="linha"> CNH</label>
+                <input type="number" name="cnh"> <br>
+        
+            </fieldset>
+            </form>
+        
+            <form>
+            <fieldset>
+                <legend>Locação</legend>
+        
+                <label class="linha"> RG</label>
+                <input type="number" name="identdade"><br>
+        
+                <label class="linha"> Placa</label>
+                <input type="number" name="placa"><br>
+        
+                <label class="linha">Data da locação</label>
+                <input type="date" name="data-loc"><br>
+        
+                <label class="linha"> Data Prevista</label>
+                <input type="date" name="data-prev"><br>
+        
+                <label class="linha">Data Devolução</label>
+                <input type="date" name="data-dev"><br>
+        
+                <label class="linha">Valor</label>
+                <input type="number" name="valor" min="0" max="10000" step="0.01" required><br>
+        
+            </fieldset>
+            </form>  
+             <button style="border-radius: 10px;">Cadastrar Veículo</button>
+
+
+    </div>
+
+
+   </div>
+
+    
+</body>
+</html>
+
+
+
+
+<!--<form action="dados.php" method="post" class="move">
+    <fieldset>
+        <legend>Cadastro de Cliente</legend>
+        <label class="linha" for="nome-usuario"> Nome </label>
+        <input type="text" name="nome-user" placeholder="Digite seu nome aqui..." autofocus id="nome-user"> <br> 
+
+        <label class="linha"> RG </label>
+        <input type="number" name="identidade"> <br>
+
+        <label class="linha"> CPF </label>
+        <input type="number" name="cpf"> <br>
+
+        <label class="linha"> Endereço </label>
+        <input type="text" name="endereco"> <br>
+
+        <label class="linha"> Data de nascimento</label>
+        <input type="date" name="nascimento">
+
+        <label class="linha"> CNH</label>
+        <input type="number" name="cnh"> <br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Locação</legend>
+
+        <label class="linha"> RG</label>
+        <input type="number" name="identdade"><br>
+
+        <label class="linha"> Placa</label>
+        <input type="number" name="placa"><br>
+
+        <label class="linha">Data da locação</label>
+        <input type="date" name="data-loc"><br>
+
+        <label class="linha"> Data Prevista</label>
+        <input type="date" name="data-prev"><br>
+
+        <label class="linha">Data Devolução</label>
+        <input type="date" name="data-dev"><br>
+
+        <label class="linha">Valor</label>
+        <input type="number" name="valor" min="0" max="10000" step="0.01" required><br>
+
+    </fieldset>
+    </form>  
+     <button style="border-radius: 10px;">Cadastrar Veículo</button>
+</body>
